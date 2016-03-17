@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Production Add</title>
+</head>
+<body>
+	<form id="send_email" action="/pocketmenu/api/product/edit" method="post" enctype="multipart/form-data">
+		<p>
+			<label>Category Name</label>	
+			<input type="text" name="cat_name" value="">
+		</p>	
+		
+		<p>
+			<label>Product ID</label>	
+			<input type="text" name="prod_id" value="">
+		</p>
+
+		<p>
+			<label>Location Name</label>
+			<input type="text" name="loc_name" value="">
+		</p>
+
+		<p>
+			<label> Product Name </label>
+			<input type="text" name="prod_name" value="">
+		</p>
+
+		<p>
+			<textarea name="prod_description" form="send_email">message here</textarea>
+		</p>
+
+		<p>
+			<label>Price</label>
+			<input type="text" name="prod_price" value="">
+		</p>
+
+		<p>
+			<label>Image</label>
+			<input type="file" name="prod_image" value="">
+		</p>
+
+		<input type="submit">
+	</form>
+</body>
+</html>

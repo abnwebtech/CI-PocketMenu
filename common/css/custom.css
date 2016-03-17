@@ -1,0 +1,24 @@
+div.form {
+	width: 60%; 
+	margin: auto; 
+	background-color: #F8F8F8;
+	padding-top: 30px;
+}
+
+form#signin-form {
+	padding-bottom: 50px;
+}
+
+form#signin-form input {
+	width: 60%;
+	margin: auto;
+}
+
+form#signin-form h1 {
+	color: yellowgreen;
+}
+
+div.loc-field {
+	display: inline-block;
+	width: 100%
+}
