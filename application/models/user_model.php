@@ -35,6 +35,28 @@ class User_model extends CI_Model {
         }
     }
 
+    function api_login($email, $password) {
+
+        $query = $this->db->get_where("admin", array('email' => $email));
+
+        if ($query->num_rows() < 1) {
+            # code...
+
+            return array(false, 'User doesnot exist');
+            
+        } else {
+
+            $query = $this->db->get_where("admin", array('email' => $email, 'password' => $password));
+
+            if ($query->num_rows() < 1) {
+                
+                return array(false, 'Wrong password');
+            }
+
+            return array(true, 'Login Success');
+        }
+    }
+
     function get_user($id) {
 
         $query = $this->db->get_where("admin", array('id' => $id));

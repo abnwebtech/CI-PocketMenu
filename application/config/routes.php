@@ -41,6 +41,7 @@
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
 
+$route['api/user/(:any)/(:any)'] = 'api/user/$1/$2';
 $route['api/location/(:any)/(:any)'] = 'api/location/$1/$2/';
 $route['api/category/(:any)/(:any)'] = 'api/category/$1/$2';
 $route['api/product/(:any)/(:any)'] = 'api/product/$1/$2';
